@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyPHARM | Каталог</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.jpg" alt="Логотип TastyPHARM" class="logo" width="72" height="72" decoding="async">
+        <div class="brand-text">
+          <h1>TastyPHARM</h1>
+          <p class="tagline">Фармацевтическая компания: качество, безопасность, забота о здоровье</p>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" data-site-nav>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="page-title">Каталог препаратов</h2>
+      <p class="lead">Линейка TastyPHARM. Назначение и применение определяет врач; самолечение может быть вредным для вашего здоровья.</p>
+      <div class="search-row">
+        <input type="search" data-search="products" placeholder="Поиск по названию или описанию" autocomplete="off">
+        <select data-filter="category" aria-label="Фильтр по категории">
+          <option value="all">Все категории</option>
+          <option value="cardio">Сердечно-сосудистая система</option>
+          <option value="neuro">Нервная система</option>
+          <option value="respiratory">Дыхательная система</option>
+          <option value="digest">ЖКТ и печень</option>
+          <option value="immune">Иммунитет и противовирусные</option>
+          <option value="musculoskeletal">Суставы и связки</option>
+          <option value="metabolic">Обмен веществ</option>
+        </select>
+      </div>
+
+      <div class="grid catalog-grid">
+        <article class="card product-card" data-product-card data-name="Кардионекс" data-category="cardio" data-text="поддержка сердечно-сосудистой системы">
+          <img src="images/kardioneks.jpg" alt="Препарат Кардионекс" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Кардионекс</h3>
+          <p>Препарат для поддержки сердечно-сосудистой системы.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: таблетки · дозировка и упаковка уточняются в инструкции.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Нейровитал" data-category="neuro" data-text="когнитивных функций памяти">
+          <img src="images/nejrovital.jpg" alt="Препарат Нейровитал" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Нейровитал</h3>
+          <p>Средство для улучшения когнитивных функций и памяти.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: капсулы · дозировка и упаковка уточняются в инструкции.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Бронхелин" data-category="respiratory" data-text="кашля воспаления дыхательных путей сироп таблетки">
+          <img src="images/bronhelin.jpg" alt="Препарат Бронхелин" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Бронхелин</h3>
+          <p>Сироп или таблетки от кашля и воспаления дыхательных путей.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Формы: сироп и таблетки · объём и дозировка в инструкции.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Гепталар" data-category="digest" data-text="гепатопротектор печень">
+          <img src="images/geptalar.jpg" alt="Препарат Гепталар" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Гепталар</h3>
+          <p>Гепатопротектор для печени.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: капсулы · применение по назначению врача.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Иммунорикс" data-category="immune" data-text="иммуномодулирующее средство">
+          <img src="images/immunoriks.jpg" alt="Препарат Иммунорикс" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Иммунорикс</h3>
+          <p>Иммуномодулирующее средство.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Возможны формы раствора и капсул — см. маркировку серии.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Артрофлексин" data-category="musculoskeletal" data-text="суставы связки">
+          <img src="images/artrfleksin.jpg" alt="Препарат Артрофлексин" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Артрофлексин</h3>
+          <p>Препарат для суставов и связок.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: капсулы · курс и дозы определяет врач.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Гастромедал" data-category="digest" data-text="гастрит изжога">
+          <img src="images/gastromedal.jpg" alt="Препарат Гастромедал" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Гастромедал</h3>
+          <p>Средство при гастрите и изжоге.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: суспензия или таблетки — уточняйте по серии.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Сомнелакс" data-category="neuro" data-text="седативное снотворное">
+          <img src="images/somnelaks.jpg" alt="Препарат Сомнелакс" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Сомнелакс</h3>
+          <p>Мягкое седативное или снотворное средство.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: таблетки · осторожность при управлении транспортом.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Диабекор" data-category="metabolic" data-text="сахар крови диабет">
+          <img src="images/diabekor.jpg" alt="Препарат Диабекор" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Диабекор</h3>
+          <p>Препарат для контроля уровня сахара в крови.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: таблетки · только по назначению эндокринолога.</p>
+          </div>
+        </article>
+
+        <article class="card product-card" data-product-card data-name="Виростатин" data-category="immune" data-text="противовирусное широкого спектра">
+          <img src="images/virostatins.jpg" alt="Препарат Виростатин" class="product-image" width="400" height="225" decoding="async">
+          <h3 class="product-name">Виростатин</h3>
+          <p>Противовирусное средство широкого спектра.</p>
+          <button type="button" class="text-link" data-expand aria-expanded="false">Подробнее о форме выпуска</button>
+          <div class="product-extra" hidden>
+            <p class="meta">Форма выпуска: капсулы · схема приёма назначается врачом.</p>
+          </div>
+        </article>
+      </div>
+
+      <section class="inner-section pharmacy-section" aria-labelledby="pharmacies-title">
+        <h3 class="section-title" id="pharmacies-title">Аптеки, в которых можно приобрести продукцию</h3>
+        <p class="meta pharmacy-lead">Препараты TastyPHARM доступны в розничных точках следующих аптечных сетей (наличие конкретных позиций уточняйте в выбранной аптеке).</p>
+        <ul class="pharmacy-chips" role="list">
+          <li>Апрель</li>
+          <li>Ригла</li>
+          <li>Нео-Фарм</li>
+          <li>Вита</li>
+          <li>Фармленд</li>
+          <li>Имплозия</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Адрес:</strong> Московская обл., Пушкинский район, дп. Черкизово, ул. Набережная, д. 11</p>
+      <p><strong>Email:</strong> <a href="mailto:tastypharm@yandex.ru">tastypharm@yandex.ru</a> · <strong>Telegram:</strong> <a href="https://t.me/tastypharm" target="_blank" rel="noopener">@tastypharm</a></p>
+      <p><strong>Телефон:</strong> <a href="tel:+79952413230">8&nbsp;(995)&nbsp;241-32-30</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyPHARM | Главная</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand brand--large" href="index.html">
+        <img src="images/logo.jpg" alt="Логотип TastyPHARM" class="logo" width="120" height="120" decoding="async">
+        <div class="brand-text">
+          <h1>TastyPHARM</h1>
+          <p class="tagline">Фармацевтическая компания: качество, безопасность, забота о здоровье</p>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" data-site-nav>
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--photo" aria-labelledby="hero-title">
+      <img class="hero-bg" src="images/hero-lab.jpg" alt="" width="1920" height="640" decoding="async" fetchpriority="high" onerror="this.style.display='none'">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2 id="hero-title">Надёжные препараты для терапии и профилактики</h2>
+          <p>
+            TastyPHARM разрабатывает и выпускает лекарственные средства с многоступенчатым контролем качества,
+            в соответствии с требованиями к фармацевтическому производству и поставками для аптек и клиник.
+          </p>
+          <div class="btn-row">
+            <a href="catalog.html" class="btn">Каталог препаратов</a>
+            <a href="contacts.html" class="btn btn-outline">Связаться с нами</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают TastyPHARM</h2>
+        <div class="grid advantages">
+          <article class="card card--icon">
+            <span class="icon-badge" aria-hidden="true">✓</span>
+            <h3>Сертифицированное производство</h3>
+            <p>Соблюдение норм GMP и внутренних регламентов на всех этапах выпуска.</p>
+          </article>
+          <article class="card card--icon">
+            <span class="icon-badge" aria-hidden="true">◎</span>
+            <h3>Контроль качества</h3>
+            <p>Ла��ораторные испытания сырья и готовой продукции перед отгрузкой.</p>
+          </article>
+          <article class="card card--icon">
+            <span class="icon-badge" aria-hidden="true">◇</span>
+            <h3>Научный подход</h3>
+            <p>Разработка формул с учётом доказательной медицины и безопасности пациентов.</p>
+          </article>
+          <article class="card card--icon">
+            <span class="icon-badge" aria-hidden="true">+</span>
+            <h3>Широкая линейка</h3>
+            <p>Препараты для сердца, нервной системы, дыхания, печени, иммунитета и других направлений.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Новости и события</h2>
+        <div class="grid news-grid">
+          <article class="card">
+            <p class="meta">Май 2026</p>
+            <h3>Обновление каталога</h3>
+            <p>Расширены формы выпуска ряда препаратов для удобства пациентов и аптечных сетей.</p>
+          </article>
+          <article class="card">
+            <p class="meta">Апрель 2026</p>
+            <h3>Партнёрская программа</h3>
+            <p>Специальные условия поставок для региональных дистрибьюторов и аптечных холдингов.</p>
+          </article>
+          <article class="card">
+            <p class="meta">Март 2026</p>
+            <h3>Модернизация линии фасовки</h3>
+            <p>Введён дополнительный контроль на финальном этапе производства.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Адрес:</strong> Московская обл., Пушкинский район, дп. Черкизово, ул. Набережная, д. 11</p>
+      <p><strong>Email:</strong> <a href="mailto:tastypharm@yandex.ru">tastypharm@yandex.ru</a> · <strong>Telegram:</strong> <a href="https://t.me/tastypharm" target="_blank" rel="noopener">@tastypharm</a></p>
+      <p><strong>Телефон:</strong> <a href="tel:+79952413230">8&nbsp;(995)&nbsp;241-32-30</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

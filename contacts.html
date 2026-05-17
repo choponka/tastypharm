@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyPHARM | Контакты</title>
+  <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <img src="images/logo.jpg" alt="Логотип TastyPHARM" class="logo" width="72" height="72" decoding="async">
+        <div class="brand-text">
+          <h1>TastyPHARM</h1>
+          <p class="tagline">Фармацевтическая компания: качество, безопасность, забота о здоровье</p>
+        </div>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" data-site-nav>
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 class="page-title">Контакты</h2>
+      <div class="grid contacts-grid">
+        <article class="card">
+          <h3>Юридический и почтовый адрес</h3>
+          <p>
+            Московская обл.<br>
+            Пушкинский район<br>
+            дп. Черкизово<br>
+            ул. Набережная, д.&nbsp;11
+          </p>
+        </article>
+        <article class="card">
+          <h3>Связь</h3>
+          <p><strong>Телефон:</strong><br><a href="tel:+79952413230">8&nbsp;(995)&nbsp;241-32-30</a></p>
+          <p><strong>Email:</strong><br><a href="mailto:tastypharm@yandex.ru">tastypharm@yandex.ru</a></p>
+          <p><strong>Telegram:</strong><br><a href="https://t.me/tastypharm" target="_blank" rel="noopener">@tastypharm</a></p>
+        </article>
+      </div>
+
+      <section class="section inner-section">
+        <div class="map-wrap">
+          <iframe title="Карта: TastyPHARM, Черкизово" src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB.%2C%20%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80-%D0%BD%2C%20%D0%B4%D0%BF.%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B8%D0%B7%D0%BE%D0%B2%D0%BE%2C%20%D1%83%D0%BB.%20%D0%9D%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%2011&z=15" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="meta map-fallback"><a class="btn btn-outline btn--small" href="https://yandex.ru/maps/?text=%D0%A7%D0%B5%D1%80%D0%BA%D0%B8%D0%B7%D0%BE%D0%B2%D0%BE%20%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F%2011" target="_blank" rel="noopener">Открыть адрес в Яндекс.Картах</a></p>
+      </section>
+
+      <section class="section inner-section">
+        <h3 class="section-title">Обратная связь</h3>
+        <form class="card contact-form" data-contact-form>
+          <div class="form-row">
+            <label for="name">Имя</label>
+            <input id="name" type="text" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Отправить</button>
+          <p class="meta form-note" data-form-note hidden></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Адрес:</strong> Московская обл., Пушкинский район, дп. Черкизово, ул. Набережная, д. 11</p>
+      <p><strong>Email:</strong> <a href="mailto:tastypharm@yandex.ru">tastypharm@yandex.ru</a> · <strong>Telegram:</strong> <a href="https://t.me/tastypharm" target="_blank" rel="noopener">@tastypharm</a></p>
+      <p><strong>Телефон:</strong> <a href="tel:+79952413230">8&nbsp;(995)&nbsp;241-32-30</a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
